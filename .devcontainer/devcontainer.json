@@ -20,7 +20,7 @@
 		"FLASK_DEBUG": 1
     },
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install ipython-sql",
+	"postCreateCommand": "pip install ipython-sql; createdb -E UTF8 -U postgres practice; psql -U postgres -d practice < practice.sql",
 
 	// Configure tool-specific properties.
 	"customizations": {
@@ -30,7 +30,7 @@
 		  	"ms-python.python"
 			]
 	  	}
-	},
+	}
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }

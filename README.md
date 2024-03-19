@@ -1,4 +1,7 @@
 # AdvancedSQL
-**Learning Objective:** Practice Joins, Sub-queries, and Aggregate Functions
+A template repo for Python, Flask, Postgres, and Jupyter Notebook
 
-This database and exercises drawn from https://github.com/anthonydb/practical-sql-2/tree/main/Chapter_07
+Notes: 
+- **requirements.txt** should stay where it is. If you move it, you need to update file location in the **Dockerfile**
+- _ipython_ for the jupyter notebook is installed via postcreate command in **devcontainer.json**
+- **practice.sql** is a sample database. To automatically load a different database, edit the **devcontainer.json** _postcreate_ command. Or simply remove psql-related bash commands
